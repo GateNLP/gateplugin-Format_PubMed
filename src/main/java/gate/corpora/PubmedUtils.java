@@ -30,14 +30,14 @@ public class PubmedUtils {
    * already associated with the given field name, then the new field value is
    * added to the map as a String value. If there is already a single String
    * value associated with the given field name, then the field value is 
-   * converted from a String to a LinkedList<String>, and the new value is 
+   * converted from a String to a LinkedList&ltString&gt;, and the new value is 
    * appended to the list. If there are already multiple values associated with the
    * field, then the new value is simply appended to the existing list.
    *  
    * @param fieldName the name for the field
    * @param fieldValue the new value for the field
    * @param fieldValues a map from field name to either String or 
-   *  LinkedList<String>
+   *  LinkedList&lt;String&gt;
    */
   public static void addFieldValue(String fieldName, String fieldValue, 
       Map<String, Serializable> fieldValues) {
@@ -57,7 +57,7 @@ public class PubmedUtils {
   }
 
   /**
-   * Given a metadata field (which may be a String or a List<String> value), 
+   * Given a metadata field (which may be a String or a List&lt;String&gt; value), 
    * this produces the corresponding String representation, while trapping all
    * exceptions.
    * @param fieldValue
