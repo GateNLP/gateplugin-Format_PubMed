@@ -17,7 +17,7 @@
 	<artifactId>format-pubmed</artifactId>
 	<version>8.5-SNAPSHOT</version>
 	
-	<name>Format_PubMed</name>
+	<name>Format: PubMed</name>
 	<description>Document Format plugin to support reading PubMed and Cochrane text files</description>
 
 	<licenses>
